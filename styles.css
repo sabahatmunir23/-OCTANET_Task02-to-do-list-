@@ -1,0 +1,151 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://i.ibb.co/vjtzxWc/wood.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background: url('https://i.ibb.co/KmhGj2T/pngtree-vintage-paper-scroll-png-image-12837814.png') no-repeat center;
+    background-size: 700px;
+    padding: 200px 50px; /* Adjust padding to align content inside the scroll */
+     border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    width: 800px;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: transparent; /* Make the background of the container transparent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px; /* Increase height of the scroll image */
+    position: relative; /* Ensure correct positioning */
+}
+
+.container h1 {
+    margin-top: 0;
+    font-size: 40px;
+    color: #333;
+    font-weight: 800;
+    color: black; /* Dark text for visibility */
+    position: absolute;
+    top: 30px; /* Align title inside the scroll */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"], select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 10px;
+    width: 80%;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent input fields */
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    font-size: 12px;
+
+ }
+
+li {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent list items */
+}
+
+li:hover {
+    transform: translateY(-5px);
+}
+
+li.low {
+    border-left: 5px solid green;
+}
+
+li.medium {
+    border-left: 5px solid orange;
+}
+
+li.high {
+    border-left: 5px solid red;
+}
+
+button.remove {
+    background-color: #dc3545;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 50%;
+}
+
+button.remove:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 80%;
+        padding: 30px;
+    }
+
+    button {
+        width: 80%;
+        box-sizing: border-box;
+    }
+}
